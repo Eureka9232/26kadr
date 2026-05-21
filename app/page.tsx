@@ -7,6 +7,7 @@ import razor1 from '@/public/razor1.svg'
 import razor2 from '@/public/razor2.svg'
 import Partpoekt from '@/public/Partproekt.svg'
 import logo from '@/public/Logo (2).svg'
+import GreenArrow from '@/public/GreenArrow.svg'
 export default function Home() {
   return (
     
@@ -16,8 +17,17 @@ export default function Home() {
         <div>
           <h1 className="font-medium text-7xl text-white pb-[20px]">ПАРТНЕРСКИЕ ПРОЕКТЫ 26 КАДР</h1>
           <p className="text-white pb-[40px]">Практико-ориентированное обучение,<br /> подготовка специалистов и совместные<br /> проекты с индустрией</p>
-          <div className="mb-20">
-            <Link href="/" className="bg-white p-4 rounded-full w-40 ">Смотреть кейсы</Link>
+          <div className="mb-20 flex flex-row justify-center">
+            <div className="bg-white w-[228px] h-[48px]  rounded-full w-40 flex items-center px-4 ">
+            <Link href="/" className="">Смотреть кейсы</Link>
+            </div>
+              <Image 
+            src={GreenArrow}
+            width={48}
+            height={48}
+            alt="26kadr"
+            className=""
+        />
           </div>
       </div>
       <div>
