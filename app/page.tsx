@@ -11,24 +11,30 @@ import GreenArrow from '@/public/GreenArrow.svg'
 export default function Home() {
   return (
     
-      <div className="flex flex-col text-center w-full justify-between">
+      <div className="flex flex-col text-center w-full">
       <Header/>
       <div className="bg-black pt-[200px] min-h-screen w-full ">
         <div>
           <h1 className="font-medium text-7xl text-white pb-[20px]">ПАРТНЕРСКИЕ ПРОЕКТЫ 26 КАДР</h1>
           <p className="text-white pb-[40px]">Практико-ориентированное обучение,<br /> подготовка специалистов и совместные<br /> проекты с индустрией</p>
-          <div className="mb-20 flex flex-row justify-center">
-            <div className="bg-white w-[228px] h-[48px]  rounded-full w-40 flex items-center px-4 ">
-            <Link href="/" className="">Смотреть кейсы</Link>
-            </div>
-              <Image 
-            src={GreenArrow}
-            width={48}
-            height={48}
-            alt="26kadr"
-            className=""
-        />
-          </div>
+    <div className="flex justify-center items-center">
+    <button className="group flex items-center bg-white text-black pl-8   rounded-full font-medium">
+      <span className="text-base select-none mr-4">
+        Смотреть кейсы
+      </span>
+      <div className="flex items-center justify-center bg-[#7FFF00] w-12 h-12 rounded-full ">
+        <svg 
+          className="w-5 h-5 text-black" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="2.5" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </div>
+    </button>
+    </div>
       </div>
       <div>
         <Image 
@@ -40,12 +46,12 @@ export default function Home() {
         />
       </div>
       {/* главный див для сетки с отстп */}
-    <div className=" px-[64px] py-[128px] bg-white gap-[24px]">
+    <div className=" px-[64px] py-[128px] bg-white gap-[24px] flex flex-col items-center justify-center">
       <div>
         <p className=" text-3xl font-bold text-start">ПРОЕКТЫ</p>
       </div>
       {/* сетка грид */}
-    <div className="grid grid-cols-3 mt-[36px] gap-5 justify-center ">
+    <div className="grid grid-cols-3 mt-[36px] gap-5">
       <Card/>
       <Card/>
       <Card/>
